@@ -29,3 +29,53 @@ section {
     text-align: center;
     padding-bottom: 80px;
 }
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-image {
+    flex: 0 0 280px;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.description {
+    margin-top: 20px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #111;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
