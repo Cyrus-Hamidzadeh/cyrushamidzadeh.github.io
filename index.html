@@ -4,53 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyrus Hamidzadeh</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 50px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .card {
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        .contact {
+            margin-top: 40px;
+        }
+
+        .button {
+            display: inline-block;
+            background: black;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Cyrus Hamidzadeh</h1>
-        <p>Computer Science Student at U of T</p>
-    </header>
+<div class="container">
 
-    <section class="about">
-        <h2>About Me</h2>
+    <h1>Cyrus Hamidzadeh</h1>
 
+    <p class="subtitle">
+        Programming & Mathematics Tutor
+    </p>
+
+    <h2>About Me</h2>
+
+    <div class="card">
         <p>
-            I teach programming and mathematics in a creative and engaging way,
-            helping students build problem-solving skills through projects and game development.
+            Computer Science student at the University of Toronto.
+            I help students learn programming fundamentals,
+            computational thinking, and mathematics through
+            practical problem-solving and project-based learning.
         </p>
-    </section>
+    </div>
 
-    <section class="services">
-        <h2>What I Teach</h2>
+    <h2>Subjects I Teach</h2>
 
-        <div class="card">
-            <h3>Programming</h3>
+    <div class="card">
+        <ul>
+            <li>Python Programming</li>
+            <li>Computational Thinking</li>
+            <li>Mathematics</li>
+            <li>Problem Solving Skills</li>
+        </ul>
+    </div>
 
-            <p>
-                Scratch, Python, beginner programming,
-                game development, problem solving, and computational thinking.
-            </p>
-        </div>
+    <h2>Contact</h2>
 
-        <div class="card">
-            <h3>Mathematics</h3>
+    <div class="card contact">
+        <p>Email: your-email@example.com</p>
+        <p>Toronto, Ontario</p>
+    </div>
 
-            <p>
-                Olympiad preparation, timed tests,
-                strengthening weak areas, and building confidence.
-            </p>
-        </div>
-    </section>
-
-    <section class="contact">
-        <h2>Contact</h2>
-
-        <p>Email: cyrus.hamidzadeh@gmail.com</p>
-        <p>Phone: 437-463-3084</p>
-    </section>
+</div>
 
 </body>
 </html>
