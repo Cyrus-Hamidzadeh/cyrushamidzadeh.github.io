@@ -1,107 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyrus Hamidzadeh</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: white;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+<title>Cyrus Hamidzadeh | Programming & Mathematics Tutor</title>
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 60px 20px;
-        }
+<style>
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        h2 {
-            color: #444;
-            margin-top: 50px;
-        }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    color:#222;
+    line-height:1.7;
+}
 
-        .subtitle {
-            font-size: 1.2rem;
-            color: #666;
-        }
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
 
-        .card {
-            background: #f8f8f8;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 15px;
-        }
+/* Navigation */
 
-        .contact {
-            margin-top: 40px;
-        }
+nav{
+    padding:25px 0;
+    border-bottom:1px solid #eee;
+}
 
-        .button {
-            display: inline-block;
-            background: black;
-            color: white;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
+.nav-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-        .button:hover {
-            opacity: 0.9;
-        }
-    </style>
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+}
+
+.menu a:hover{
+    color:#2563eb;
+}
+
+/* Hero Section */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:80px 0;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-text h2{
+    color:#4b5563;
+    margin-bottom:25px;
+    font-weight:normal;
+}
+
+.hero-text p{
+    color:#555;
+    max-width:650px;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:10px;
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:#2563eb;
+    color:white;
+}
+
+.btn-secondary{
+    border:2px solid #2563eb;
+    color:#2563eb;
+}
+
+.hero-image{
+    flex:0 0 350px;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Sections */
+
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    font-size:2.2rem;
+    margin-bottom:25px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fafafa;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #eee;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+/* Contact */
+
+.contact-box{
+    background:#fafafa;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #eee;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+    border-top:1px solid #eee;
+    margin-top:40px;
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="container">
+<nav>
+<div class="container nav-content">
 
-    <h1>Cyrus Hamidzadeh</h1>
+<div class="logo">
+Cyrus Hamidzadeh
+</div>
 
-    <p class="subtitle">
-        Programming & Mathematics Tutor
-    </p>
-
-    <h2>About Me</h2>
-
-    <div class="card">
-        <p>
-            Computer Science student at the University of Toronto.
-            I help students learn programming fundamentals,
-            computational thinking, and mathematics through
-            practical problem-solving and project-based learning.
-        </p>
-    </div>
-
-    <h2>Subjects I Teach</h2>
-
-    <div class="card">
-        <ul>
-            <li>Python Programming</li>
-            <li>Computational Thinking</li>
-            <li>Mathematics</li>
-            <li>Problem Solving Skills</li>
-        </ul>
-    </div>
-
-    <h2>Contact</h2>
-
-    <div class="card contact">
-        <p>Email: your-email@example.com</p>
-        <p>Toronto, Ontario</p>
-    </div>
+<div class="menu">
+<a href="#about">About</a>
+<a href="#subjects">Subjects</a>
+<a href="#why">Why Me</a>
+<a href="#contact">Contact</a>
+</div>
 
 </div>
+</nav>
+
+<div class="container">
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Cyrus Hamidzadeh</h1>
+
+<h2>Programming & Mathematics Tutor</h2>
+
+<p>
+Computer Science student at the University of Toronto.
+I help students build strong foundations in programming,
+computational thinking, mathematics, and problem solving
+through personalized and practical learning.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn btn-primary">
+Contact Me
+</a>
+
+<a href="#subjects" class="btn btn-secondary">
+View Subjects
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+<img src="profile.jpg" alt="Cyrus Hamidzadeh">
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+I am a Computer Science student at the University of Toronto.
+My goal is to help students understand concepts deeply,
+develop confidence, and learn how to solve problems independently.
+</p>
+
+</section>
+
+<section id="subjects">
+
+<h2 class="section-title">What I Teach</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Python Programming</h3>
+<p>
+Learn programming fundamentals and create real projects.
+</p>
+</div>
+
+<div class="card">
+<h3>Computational Thinking</h3>
+<p>
+Develop logical thinking and problem-solving skills.
+</p>
+</div>
+
+<div class="card">
+<h3>Mathematics</h3>
+<p>
+Clear explanations and step-by-step solutions.
+</p>
+</div>
+
+<div class="card">
+<h3>Problem Solving</h3>
+<p>
+Build confidence in tackling challenging questions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="why">
+
+<h2 class="section-title">Why Students & Parents Choose Me</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Personalized Learning</h3>
+<p>
+Lessons tailored to each student's needs and goals.
+</p>
+</div>
+
+<div class="card">
+<h3>Strong Foundations</h3>
+<p>
+Focus on understanding rather than memorization.
+</p>
+</div>
+
+<div class="card">
+<h3>Real Projects</h3>
+<p>
+Students learn by building practical projects.
+</p>
+</div>
+
+<div class="card">
+<h3>Supportive Environment</h3>
+<p>
+Encouraging growth, confidence, and curiosity.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact-box">
+
+<p><strong>Email:</strong> your-email@example.com</p>
+
+<p><strong>Location:</strong> Toronto, Ontario</p>
+
+<p><strong>University:</strong> University of Toronto</p>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+© 2026 Cyrus Hamidzadeh. All Rights Reserved.
+</footer>
 
 </body>
 </html>
